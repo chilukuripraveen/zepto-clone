@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Vegetables & Fruits | Zepto Clone</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/category.css">
+<link rel="stylesheet" href="../css/product.css">
+<link rel="stylesheet" href="../css/cart.css">
+<link rel="stylesheet" href="../css/responsive.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+            <span class="logo-main">zepto</span>
+            <span class="logo-sub">Clone</span>
+        </a>
+
+        <!-- Location -->
+        <button class="location-btn" id="locationBtn">
+
+            <span class="location-icon">📍</span>
+
+            <span>
+                <small>Deliver to</small>
+                <strong id="selectedLocation">
+                    Select location
+                </strong>
+            </span>
+
+            <span>⌄</span>
+
+        </button>
+
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <span class="search-icon">🔍</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for fruits, vegetables and more"
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <!-- Actions -->
+        <div class="nav-actions">
+
+            <button class="login-btn" id="loginBtn">
+                👤 Login
+            </button>
+
+            <button class="cart-btn" id="cartBtn">
+
+                🛒
+                <span>Cart</span>
+
+                <b id="cartCount">0</b>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= BREADCRUMB ================= -->
+<section class="breadcrumb-section">
+
+    <div class="container">
+
+        <div class="breadcrumb">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <span>›</span>
+
+            <a href="category.html">
+                Categories
+            </a>
+
+            <span>›</span>
+
+            <strong>
+                Vegetables & Fruits
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="product-page-header">
+
+    <div class="container">
+
+        <div class="product-heading">
+
+            <div>
+
+                <span class="section-label">
+                    FRESH EVERY DAY
+                </span>
+
+                <h1>
+                    Vegetables & Fruits
+                </h1>
+
+                <p>
+                    Fresh fruits, vegetables and greens for
+                    your everyday meals.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCT CATEGORIES ================= -->
+<section class="sub-category-section">
+
+    <div class="container">
+
+        <div class="sub-category-list">
+
+            <button class="sub-category active">
+                All
+            </button>
+
+            <button class="sub-category">
+                Vegetables
+            </button>
+
+            <button class="sub-category">
+                Fruits
+            </button>
+
+            <button class="sub-category">
+                Leafy Greens
+            </button>
+
+            <button class="sub-category">
+                Exotic Fruits
+            </button>
+
+            <button class="sub-category">
+                Exotic Vegetables
+            </button>
+
+            <button class="sub-category">
+                Herbs
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OFFER BANNER ================= -->
+<section class="product-offer-section">
+
+    <div class="container">
+
+        <div class="product-offer">
+
+            <div class="product-offer-content">
+
+                <span>
+                    FRESH DEALS
+                </span>
+
+                <h2>
+                    Fresh produce<br>
+                    at great prices
+                </h2>
+
+                <p>
+                    Bring fresh fruits and vegetables
+                    straight to your kitchen.
+                </p>
+
+            </div>
+
+            <div class="product-offer-icon">
+                🥬
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+<main class="product-page">
+
+    <div class="container">
+
+        <!-- Product heading -->
+        <div class="product-toolbar">
+
+            <div>
+
+                <h2>
+                    Fresh Fruits & Vegetables
+                </h2>
+
+                <p id="productResultCount">
+                    Showing popular fresh produce
+                </p>
+
+            </div>
+
+
+            <!-- Sort -->
+            <div class="sort-box">
+
+                <label for="sortProducts">
+                    Sort:
+                </label>
+
+                <select id="sortProducts">
+
+                    <option value="default">
+                        Recommended
+                    </option>
+
+                    <option value="low-high">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high-low">
+                        Price: High to Low
+                    </option>
+
+                    <option value="discount">
+                        Highest Discount
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product Grid -->
+        <div
+            class="product-grid"
+            id="productGrid"
+            data-category="vegetables-fruits"
+        >
+
+            <!-- Product 1 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        15% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🍎
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        1 kg
+                    </span>
+
+                    <h3>
+                        Fresh Apples
+                    </h3>
+
+                    <p class="product-description">
+                        Crisp and naturally sweet fresh apples
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹149
+                        </strong>
+
+                        <del>
+                            ₹175
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="fruit-001"
+                        data-product-name="Fresh Apples"
+                        data-product-price="149"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 2 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        12% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🍌
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        1 kg
+                    </span>
+
+                    <h3>
+                        Bananas
+                    </h3>
+
+                    <p class="product-description">
+                        Naturally sweet ripe bananas
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹55
+                        </strong>
+
+                        <del>
+                            ₹63
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="fruit-002"
+                        data-product-name="Bananas"
+                        data-product-price="55"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 3 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        10% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🍊
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        1 kg
+                    </span>
+
+                    <h3>
+                        Fresh Oranges
+                    </h3>
+
+                    <p class="product-description">
+                        Juicy and refreshing seasonal oranges
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹85
+                        </strong>
+
+                        <del>
+                            ₹95
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="fruit-003"
+                        data-product-name="Fresh Oranges"
+                        data-product-price="85"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 4 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        18% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🍅
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        1 kg
+                    </span>
+
+                    <h3>
+                        Fresh Tomatoes
+                    </h3>
+
+                    <p class="product-description">
+                        Fresh red tomatoes for everyday cooking
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹42
+                        </strong>
+
+                        <del>
+                            ₹51
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="vegetable-001"
+                        data-product-name="Fresh Tomatoes"
+                        data-product-price="42"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 5 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        14% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🥔
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        1 kg
+                    </span>
+
+                    <h3>
+                        Potatoes
+                    </h3>
+
+                    <p class="product-description">
+                        Fresh potatoes suitable for everyday cooking
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹38
+                        </strong>
+
+                        <del>
+                            ₹44
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="vegetable-002"
+                        data-product-name="Potatoes"
+                        data-product-price="38"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 6 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        16% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🧅
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        1 kg
+                    </span>
+
+                    <h3>
+                        Onions
+                    </h3>
+
+                    <p class="product-description">
+                        Fresh onions for everyday Indian cooking
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹45
+                        </strong>
+
+                        <del>
+                            ₹54
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="vegetable-003"
+                        data-product-name="Onions"
+                        data-product-price="45"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 7 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        10% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🥕
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        500 g
+                    </span>
+
+                    <h3>
+                        Fresh Carrots
+                    </h3>
+
+                    <p class="product-description">
+                        Crunchy and fresh orange carrots
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹42
+                        </strong>
+
+                        <del>
+                            ₹47
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="vegetable-004"
+                        data-product-name="Fresh Carrots"
+                        data-product-price="42"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 8 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        13% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🥬
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        250 g
+                    </span>
+
+                    <h3>
+                        Fresh Spinach
+                    </h3>
+
+                    <p class="product-description">
+                        Fresh leafy greens for healthy meals
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹28
+                        </strong>
+
+                        <del>
+                            ₹32
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="vegetable-005"
+                        data-product-name="Fresh Spinach"
+                        data-product-price="28"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- No products -->
+        <div
+            class="no-products"
+            id="noProducts"
+            style="display:none;"
+        >
+
+            <div>
+                🔍
+            </div>
+
+            <h3>
+                No products found
+            </h3>
+
+            <p>
+                Try searching for another fruit or vegetable.
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- ================= BENEFITS ================= -->
+<section class="benefits-section">
+
+    <div class="container">
+
+        <h2>
+            Why shop fresh produce with us?
+        </h2>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+
+                <span>🥬</span>
+
+                <h3>
+                    Fresh Produce
+                </h3>
+
+                <p>
+                    Find fresh fruits and vegetables for everyday meals.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <span>⚡</span>
+
+                <h3>
+                    Quick Delivery
+                </h3>
+
+                <p>
+                    Get your fresh essentials delivered quickly.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <span>💰</span>
+
+                <h3>
+                    Great Prices
+                </h3>
+
+                <p>
+                    Enjoy attractive deals on everyday fresh produce.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="../index.html" class="logo">
+
+                    <span class="logo-main">
+                        zepto
+                    </span>
+
+                    <span class="logo-sub">
+                        Clone
+                    </span>
+
+                </a>
+
+                <p>
+                    Your everyday essentials,
+                    delivered quickly.
+                </p>
+
+            </div>
+
+
+            <!-- Company -->
+            <div class="footer-column">
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="category.html">
+                    Categories
+                </a>
+
+                <a href="#">
+                    About Us
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div class="footer-column">
+
+                <h4>
+                    Categories
+                </h4>
+
+                <a href="grocery.html">
+                    Grocery
+                </a>
+
+                <a href="drinks.html">
+                    Drinks
+                </a>
+
+                <a href="personal-care.html">
+                    Personal Care
+                </a>
+
+                <a href="vegetables-fruits.html">
+                    Fruits & Vegetables
+                </a>
+
+            </div>
+
+
+            <!-- Support -->
+            <div class="footer-column">
+
+                <h4>
+                    Support
+                </h4>
+
+                <a href="#">
+                    Help Center
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Zepto Clone. Portfolio project.
+            </p>
+
+            <p>
+                Built with HTML, CSS & JavaScript
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= CART DRAWER ================= -->
+<aside
+    class="cart-drawer"
+    id="cartDrawer"
+>
+
+    <div class="cart-header">
+
+        <h2>
+            Your Cart
+        </h2>
+
+        <button id="closeCart">
+            ✕
+        </button>
+
+    </div>
+
+
+    <div
+        id="cartItems"
+        class="cart-items"
+    >
+
+        <div class="empty-cart">
+
+            <span>
+                🛒
+            </span>
+
+            <h3>
+                Your cart is empty
+            </h3>
+
+            <p>
+                Add products to start shopping.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+        <a
+            href="cart.html"
+            class="checkout-btn"
+        >
+            View Cart
+        </a>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= LOCATION MODAL ================= -->
+<div
+    class="modal-overlay"
+    id="locationModal"
+>
+
+    <div class="location-modal">
+
+        <button
+            class="modal-close"
+            id="closeLocation"
+        >
+            ✕
+        </button>
+
+        <div class="modal-icon">
+            📍
+        </div>
+
+        <h2>
+            Select your location
+        </h2>
+
+        <p>
+            Choose your delivery location to see
+            products available in your area.
+        </p>
+
+        <button
+            class="detect-location"
+            id="detectLocation"
+        >
+            📍 Detect my location
+        </button>
+
+        <div class="location-divider">
+            <span>OR</span>
+        </div>
+
+        <input
+            type="text"
+            id="locationInput"
+            placeholder="Enter your location"
+        >
+
+        <button
+            class="save-location"
+            id="saveLocation"
+        >
+            Save Location
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script src="../js/products.js" defer></script>
+<script src="../js/cart.js" defer></script>
+<script src="../js/search.js" defer></script>
+<script src="../js/app.js" defer></script>
+```
+
+</body>
+</html>
