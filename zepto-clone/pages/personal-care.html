@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Personal Care | Zepto Clone</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/category.css">
+<link rel="stylesheet" href="../css/product.css">
+<link rel="stylesheet" href="../css/cart.css">
+<link rel="stylesheet" href="../css/responsive.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+            <span class="logo-main">zepto</span>
+            <span class="logo-sub">Clone</span>
+        </a>
+
+        <!-- Location -->
+        <button class="location-btn" id="locationBtn">
+
+            <span class="location-icon">📍</span>
+
+            <span>
+                <small>Deliver to</small>
+                <strong id="selectedLocation">
+                    Select location
+                </strong>
+            </span>
+
+            <span>⌄</span>
+
+        </button>
+
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <span class="search-icon">🔍</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for personal care products"
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <!-- Actions -->
+        <div class="nav-actions">
+
+            <button class="login-btn" id="loginBtn">
+                👤 Login
+            </button>
+
+            <button class="cart-btn" id="cartBtn">
+
+                🛒
+                <span>Cart</span>
+
+                <b id="cartCount">0</b>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= BREADCRUMB ================= -->
+<section class="breadcrumb-section">
+
+    <div class="container">
+
+        <div class="breadcrumb">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <span>›</span>
+
+            <a href="category.html">
+                Categories
+            </a>
+
+            <span>›</span>
+
+            <strong>
+                Personal Care
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="product-page-header">
+
+    <div class="container">
+
+        <div class="product-heading">
+
+            <div>
+
+                <span class="section-label">
+                    BEAUTY & HYGIENE
+                </span>
+
+                <h1>
+                    Personal Care
+                </h1>
+
+                <p>
+                    Everyday essentials for your skincare,
+                    haircare, hygiene and grooming needs.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PERSONAL CARE CATEGORIES ================= -->
+<section class="sub-category-section">
+
+    <div class="container">
+
+        <div class="sub-category-list">
+
+            <button class="sub-category active">
+                All
+            </button>
+
+            <button class="sub-category">
+                Bath & Body
+            </button>
+
+            <button class="sub-category">
+                Skincare
+            </button>
+
+            <button class="sub-category">
+                Haircare
+            </button>
+
+            <button class="sub-category">
+                Oral Care
+            </button>
+
+            <button class="sub-category">
+                Grooming
+            </button>
+
+            <button class="sub-category">
+                Feminine Care
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OFFER BANNER ================= -->
+<section class="product-offer-section">
+
+    <div class="container">
+
+        <div class="product-offer">
+
+            <div class="product-offer-content">
+
+                <span>
+                    SELF-CARE DEALS
+                </span>
+
+                <h2>
+                    Care for yourself<br>
+                    at great prices
+                </h2>
+
+                <p>
+                    Discover everyday beauty and personal hygiene
+                    essentials at exciting prices.
+                </p>
+
+            </div>
+
+            <div class="product-offer-icon">
+                🧴
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+<main class="product-page">
+
+    <div class="container">
+
+        <!-- Product heading -->
+        <div class="product-toolbar">
+
+            <div>
+
+                <h2>
+                    Personal Care Products
+                </h2>
+
+                <p id="productResultCount">
+                    Showing popular personal care products
+                </p>
+
+            </div>
+
+
+            <!-- Sort -->
+            <div class="sort-box">
+
+                <label for="sortProducts">
+                    Sort:
+                </label>
+
+                <select id="sortProducts">
+
+                    <option value="default">
+                        Recommended
+                    </option>
+
+                    <option value="low-high">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high-low">
+                        Price: High to Low
+                    </option>
+
+                    <option value="discount">
+                        Highest Discount
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product Grid -->
+        <div
+            class="product-grid"
+            id="productGrid"
+            data-category="personal-care"
+        >
+
+            <!-- Product 1 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        15% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🧴
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        250 ml
+                    </span>
+
+                    <h3>
+                        Daily Moisturizing Lotion
+                    </h3>
+
+                    <p class="product-description">
+                        Lightweight lotion for soft and moisturized skin
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹170
+                        </strong>
+
+                        <del>
+                            ₹200
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="personal-001"
+                        data-product-name="Daily Moisturizing Lotion"
+                        data-product-price="170"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 2 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        12% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🧼
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        100 g
+                    </span>
+
+                    <h3>
+                        Bath Soap
+                    </h3>
+
+                    <p class="product-description">
+                        Gentle cleansing soap for everyday bathing
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹38
+                        </strong>
+
+                        <del>
+                            ₹43
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="personal-002"
+                        data-product-name="Bath Soap"
+                        data-product-price="38"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 3 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        10% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🪥
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        150 g
+                    </span>
+
+                    <h3>
+                        Herbal Toothpaste
+                    </h3>
+
+                    <p class="product-description">
+                        Everyday toothpaste for complete oral care
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹105
+                        </strong>
+
+                        <del>
+                            ₹117
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="personal-003"
+                        data-product-name="Herbal Toothpaste"
+                        data-product-price="105"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 4 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        18% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🧴
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        180 ml
+                    </span>
+
+                    <h3>
+                        Shampoo
+                    </h3>
+
+                    <p class="product-description">
+                        Nourishing shampoo for clean and healthy hair
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹145
+                        </strong>
+
+                        <del>
+                            ₹175
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="personal-004"
+                        data-product-name="Shampoo"
+                        data-product-price="145"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 5 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        14% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🧴
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        100 ml
+                    </span>
+
+                    <h3>
+                        Face Wash
+                    </h3>
+
+                    <p class="product-description">
+                        Gentle face cleanser for everyday use
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹135
+                        </strong>
+
+                        <del>
+                            ₹158
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="personal-005"
+                        data-product-name="Face Wash"
+                        data-product-price="135"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 6 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        10% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🪒
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        1 pack
+                    </span>
+
+                    <h3>
+                        Disposable Razors
+                    </h3>
+
+                    <p class="product-description">
+                        Comfortable razors for easy grooming
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹95
+                        </strong>
+
+                        <del>
+                            ₹105
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="personal-006"
+                        data-product-name="Disposable Razors"
+                        data-product-price="95"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 7 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        16% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🧻
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        4 rolls
+                    </span>
+
+                    <h3>
+                        Toilet Tissue Rolls
+                    </h3>
+
+                    <p class="product-description">
+                        Soft and absorbent everyday tissue rolls
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹125
+                        </strong>
+
+                        <del>
+                            ₹149
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="personal-007"
+                        data-product-name="Toilet Tissue Rolls"
+                        data-product-price="125"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 8 -->
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <span class="discount-badge">
+                        13% OFF
+                    </span>
+
+                    <div class="product-placeholder">
+                        🧖
+                    </div>
+
+                </div>
+
+                <div class="product-details">
+
+                    <span class="product-weight">
+                        100 g
+                    </span>
+
+                    <h3>
+                        Hair Conditioner
+                    </h3>
+
+                    <p class="product-description">
+                        Smoothening conditioner for soft hair
+                    </p>
+
+                    <div class="product-price">
+
+                        <strong>
+                            ₹155
+                        </strong>
+
+                        <del>
+                            ₹179
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart-btn"
+                        data-product-id="personal-008"
+                        data-product-name="Hair Conditioner"
+                        data-product-price="155"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- No products -->
+        <div
+            class="no-products"
+            id="noProducts"
+            style="display:none;"
+        >
+
+            <div>
+                🔍
+            </div>
+
+            <h3>
+                No products found
+            </h3>
+
+            <p>
+                Try searching for another personal care product.
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- ================= BENEFITS ================= -->
+<section class="benefits-section">
+
+    <div class="container">
+
+        <h2>
+            Why shop personal care with us?
+        </h2>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+
+                <span>⚡</span>
+
+                <h3>
+                    Quick Delivery
+                </h3>
+
+                <p>
+                    Get your personal care essentials delivered quickly.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <span>💰</span>
+
+                <h3>
+                    Great Deals
+                </h3>
+
+                <p>
+                    Save more with offers on everyday essentials.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <span>✨</span>
+
+                <h3>
+                    Everyday Care
+                </h3>
+
+                <p>
+                    Find products for your daily grooming and hygiene.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="../index.html" class="logo">
+
+                    <span class="logo-main">
+                        zepto
+                    </span>
+
+                    <span class="logo-sub">
+                        Clone
+                    </span>
+
+                </a>
+
+                <p>
+                    Your everyday essentials,
+                    delivered quickly.
+                </p>
+
+            </div>
+
+
+            <!-- Company -->
+            <div class="footer-column">
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="category.html">
+                    Categories
+                </a>
+
+                <a href="#">
+                    About Us
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div class="footer-column">
+
+                <h4>
+                    Categories
+                </h4>
+
+                <a href="grocery.html">
+                    Grocery
+                </a>
+
+                <a href="drinks.html">
+                    Drinks
+                </a>
+
+                <a href="personal-care.html">
+                    Personal Care
+                </a>
+
+                <a href="vegetables-fruits.html">
+                    Fruits & Vegetables
+                </a>
+
+            </div>
+
+
+            <!-- Support -->
+            <div class="footer-column">
+
+                <h4>
+                    Support
+                </h4>
+
+                <a href="#">
+                    Help Center
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Zepto Clone. Portfolio project.
+            </p>
+
+            <p>
+                Built with HTML, CSS & JavaScript
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= CART DRAWER ================= -->
+<aside
+    class="cart-drawer"
+    id="cartDrawer"
+>
+
+    <div class="cart-header">
+
+        <h2>
+            Your Cart
+        </h2>
+
+        <button id="closeCart">
+            ✕
+        </button>
+
+    </div>
+
+
+    <div
+        id="cartItems"
+        class="cart-items"
+    >
+
+        <div class="empty-cart">
+
+            <span>
+                🛒
+            </span>
+
+            <h3>
+                Your cart is empty
+            </h3>
+
+            <p>
+                Add products to start shopping.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+        <a
+            href="cart.html"
+            class="checkout-btn"
+        >
+            View Cart
+        </a>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= LOCATION MODAL ================= -->
+<div
+    class="modal-overlay"
+    id="locationModal"
+>
+
+    <div class="location-modal">
+
+        <button
+            class="modal-close"
+            id="closeLocation"
+        >
+            ✕
+        </button>
+
+        <div class="modal-icon">
+            📍
+        </div>
+
+        <h2>
+            Select your location
+        </h2>
+
+        <p>
+            Choose your delivery location to see
+            products available in your area.
+        </p>
+
+        <button
+            class="detect-location"
+            id="detectLocation"
+        >
+            📍 Detect my location
+        </button>
+
+        <div class="location-divider">
+            <span>OR</span>
+        </div>
+
+        <input
+            type="text"
+            id="locationInput"
+            placeholder="Enter your location"
+        >
+
+        <button
+            class="save-location"
+            id="saveLocation"
+        >
+            Save Location
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script src="../js/products.js" defer></script>
+<script src="../js/cart.js" defer></script>
+<script src="../js/search.js" defer></script>
+<script src="../js/app.js" defer></script>
+```
+
+</body>
+</html>
