@@ -1,0 +1,627 @@
+/* =========================================================
+ZEPTO CLONE - NAVBAR STYLES
+File: css/navbar.css
+========================================================= */
+
+/* =========================================================
+
+1. MAIN NAVBAR
+   ========================================================= */
+
+.navbar {
+position: sticky;
+
+```
+top: 0;
+
+z-index: 1000;
+
+width: 100%;
+
+background: var(--white);
+
+border-bottom: 1px solid var(--border-color);
+
+box-shadow: var(--shadow-small);
+```
+
+}
+
+/* =========================================================
+2. NAV CONTAINER
+========================================================= */
+
+.nav-container {
+width: min(
+var(--container-width),
+calc(100% - 40px)
+);
+
+```
+min-height: 72px;
+
+margin: 0 auto;
+
+display: flex;
+
+align-items: center;
+
+gap: 18px;
+```
+
+}
+
+/* =========================================================
+3. LOGO
+========================================================= */
+
+.logo {
+display: flex;
+
+```
+align-items: center;
+
+gap: 6px;
+
+flex-shrink: 0;
+
+line-height: 1;
+```
+
+}
+
+.logo-main {
+color: var(--primary-color);
+
+```
+font-size: 30px;
+
+font-weight: 800;
+
+letter-spacing: -1.5px;
+```
+
+}
+
+.logo-sub {
+padding: 3px 6px;
+
+```
+border-radius: 5px;
+
+background: var(--primary-light);
+
+color: var(--primary-color);
+
+font-size: 10px;
+
+font-weight: 700;
+
+text-transform: uppercase;
+
+letter-spacing: 0.5px;
+```
+
+}
+
+.logo:hover .logo-main {
+color: var(--primary-dark);
+}
+
+/* =========================================================
+4. LOCATION BUTTON
+========================================================= */
+
+.location-btn {
+min-height: 42px;
+
+```
+max-width: 190px;
+
+padding: 0 12px;
+
+display: flex;
+
+align-items: center;
+
+gap: 6px;
+
+flex-shrink: 0;
+
+border: 1px solid var(--border-color);
+
+border-radius: var(--radius-small);
+
+background: var(--white);
+
+color: var(--text-dark);
+
+font-size: 13px;
+
+font-weight: 600;
+
+white-space: nowrap;
+
+overflow: hidden;
+
+transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+```
+
+}
+
+.location-btn:hover {
+border-color: var(--primary-color);
+
+```
+background: var(--primary-light);
+```
+
+}
+
+#selectedLocation {
+overflow: hidden;
+
+```
+text-overflow: ellipsis;
+
+white-space: nowrap;
+```
+
+}
+
+/* =========================================================
+5. SEARCH BOX
+========================================================= */
+
+.search-box {
+position: relative;
+
+```
+flex: 1;
+
+min-width: 180px;
+
+max-width: 520px;
+
+display: flex;
+
+align-items: center;
+```
+
+}
+
+.search-box > span {
+position: absolute;
+
+```
+left: 14px;
+
+color: var(--text-light);
+
+font-size: 17px;
+
+pointer-events: none;
+```
+
+}
+
+.search-box input {
+width: 100%;
+
+```
+height: 44px;
+
+padding: 0 15px 0 42px;
+
+border: 1px solid var(--border-color);
+
+border-radius: var(--radius-small);
+
+outline: none;
+
+background: #f9fafb;
+
+color: var(--text-dark);
+
+font-size: 14px;
+
+transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+```
+
+}
+
+.search-box input::placeholder {
+color: var(--text-light);
+}
+
+.search-box input:hover {
+background: var(--white);
+
+```
+border-color: #d1d5db;
+```
+
+}
+
+.search-box input:focus {
+background: var(--white);
+
+```
+border-color: var(--primary-color);
+
+box-shadow:
+    0 0 0 3px
+    rgba(91, 33, 182, 0.10);
+```
+
+}
+
+/* =========================================================
+6. LOGIN BUTTON
+========================================================= */
+
+.login-btn {
+min-height: 42px;
+
+```
+padding: 0 16px;
+
+flex-shrink: 0;
+
+border: none;
+
+background: transparent;
+
+color: var(--text-dark);
+
+border-radius: var(--radius-small);
+
+font-size: 14px;
+
+font-weight: 600;
+
+transition:
+    background 0.2s ease,
+    color 0.2s ease;
+```
+
+}
+
+.login-btn:hover {
+background: var(--primary-light);
+
+```
+color: var(--primary-color);
+```
+
+}
+
+/* =========================================================
+7. CART BUTTON
+========================================================= */
+
+.cart-btn {
+position: relative;
+
+```
+min-height: 44px;
+
+padding: 0 16px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 7px;
+
+flex-shrink: 0;
+
+border: none;
+
+border-radius: var(--radius-small);
+
+background: var(--primary-color);
+
+color: var(--white);
+
+font-size: 14px;
+
+font-weight: 700;
+
+transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+```
+
+}
+
+.cart-btn:hover {
+background: var(--primary-dark);
+
+```
+transform: translateY(-1px);
+```
+
+}
+
+/* =========================================================
+8. CART COUNT
+========================================================= */
+
+#cartCount {
+min-width: 21px;
+
+```
+height: 21px;
+
+padding: 0 5px;
+
+display: inline-flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+background: var(--white);
+
+color: var(--primary-color);
+
+font-size: 11px;
+
+font-weight: 800;
+```
+
+}
+
+/* =========================================================
+9. CHECKOUT NAVBAR
+========================================================= */
+
+.checkout-title {
+flex: 1;
+
+```
+text-align: center;
+
+color: var(--text-dark);
+
+font-size: 18px;
+
+font-weight: 700;
+```
+
+}
+
+.back-cart {
+min-height: 40px;
+
+```
+display: inline-flex;
+
+align-items: center;
+
+padding: 0 12px;
+
+border-radius: var(--radius-small);
+
+color: var(--primary-color);
+
+font-size: 14px;
+
+font-weight: 600;
+
+transition:
+    background 0.2s ease;
+```
+
+}
+
+.back-cart:hover {
+background: var(--primary-light);
+}
+
+/* =========================================================
+10. NAVBAR BUTTON FOCUS
+========================================================= */
+
+.location-btn:focus-visible,
+.login-btn:focus-visible,
+.cart-btn:focus-visible,
+.back-cart:focus-visible {
+outline: 3px solid rgba(91, 33, 182, 0.2);
+
+```
+outline-offset: 2px;
+```
+
+}
+
+/* =========================================================
+11. SEARCH CLEAR / INPUT SUPPORT
+========================================================= */
+
+.search-box input::-webkit-search-cancel-button {
+cursor: pointer;
+}
+
+/* =========================================================
+12. NAVBAR RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+```
+.nav-container {
+    gap: 12px;
+}
+
+.location-btn {
+    max-width: 150px;
+}
+
+.logo-main {
+    font-size: 26px;
+}
+
+.logo-sub {
+    display: none;
+}
+
+.search-box {
+    max-width: none;
+}
+
+.login-btn {
+    padding: 0 10px;
+}
+
+.cart-btn {
+    padding: 0 12px;
+}
+```
+
+}
+
+/* =========================================================
+13. NAVBAR RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+```
+.navbar {
+    position: sticky;
+
+    top: 0;
+}
+
+.nav-container {
+    min-height: auto;
+
+    padding: 10px 0;
+
+    display: grid;
+
+    grid-template-columns: auto 1fr auto;
+
+    gap: 8px;
+}
+
+.logo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.logo-main {
+    font-size: 24px;
+}
+
+.location-btn {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    justify-self: center;
+
+    max-width: 160px;
+
+    min-height: 38px;
+
+    font-size: 12px;
+}
+
+.login-btn {
+    grid-column: 3;
+
+    grid-row: 1;
+
+    min-height: 38px;
+
+    padding: 0 8px;
+
+    font-size: 13px;
+}
+
+.cart-btn {
+    grid-column: 3;
+
+    grid-row: 2;
+
+    min-height: 38px;
+
+    padding: 0 10px;
+
+    font-size: 13px;
+}
+
+.search-box {
+    grid-column: 1 / 3;
+
+    grid-row: 2;
+
+    width: 100%;
+
+    max-width: none;
+}
+
+.search-box input {
+    height: 42px;
+}
+
+.checkout-title {
+    font-size: 16px;
+}
+
+.back-cart {
+    font-size: 12px;
+}
+```
+
+}
+
+/* =========================================================
+14. VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+```
+.nav-container {
+    width: calc(100% - 24px);
+}
+
+.location-btn {
+    max-width: 125px;
+}
+
+.location-btn {
+    padding: 0 8px;
+}
+
+.login-btn {
+    font-size: 12px;
+}
+
+.cart-btn {
+    font-size: 12px;
+}
+
+.search-box input {
+    font-size: 13px;
+}
+```
+
+}
+
+/* =========================================================
+END OF NAVBAR STYLES
+========================================================= */

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delivery Address | Zepto Clone</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-main">zepto</span>
+                <span class="logo-sub">Clone</span>
+            </a>
+
+            <div class="checkout-title">
+                Checkout
+            </div>
+
+            <a href="cart.html" class="back-cart">
+                ← Back to Cart
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= CHECKOUT STEPS ================= -->
+    <section class="checkout-progress">
+
+        <div class="checkout-step active">
+            <span>1</span>
+            <p>Address</p>
+        </div>
+
+        <div class="checkout-line"></div>
+
+        <div class="checkout-step">
+            <span>2</span>
+            <p>Payment</p>
+        </div>
+
+        <div class="checkout-line"></div>
+
+        <div class="checkout-step">
+            <span>3</span>
+            <p>Order</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= ADDRESS PAGE ================= -->
+    <main class="checkout-page">
+
+        <div class="container checkout-layout">
+
+            <!-- ADDRESS FORM -->
+            <section class="address-section">
+
+                <div class="checkout-card">
+
+                    <h1>Delivery Address</h1>
+
+                    <p class="checkout-description">
+                        Enter the address where you want your order delivered.
+                    </p>
+
+
+                    <form id="addressForm">
+
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter phone number"
+                                    maxlength="10"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="pincode">
+                                    PIN Code
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="pincode"
+                                    name="pincode"
+                                    placeholder="Enter PIN code"
+                                    maxlength="6"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="house">
+                                House / Flat / Building
+                            </label>
+
+                            <input
+                                type="text"
+                                id="house"
+                                name="house"
+                                placeholder="House number, flat number, building name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="street">
+                                Street / Area
+                            </label>
+
+                            <input
+                                type="text"
+                                id="street"
+                                name="street"
+                                placeholder="Street, area or locality"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="city">
+                                    City
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="city"
+                                    name="city"
+                                    placeholder="Enter city"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="state">
+                                    State
+                                </label>
+
+                                <select id="state" name="state" required>
+
+                                    <option value="">
+                                        Select State
+                                    </option>
+
+                                    <option>Andhra Pradesh</option>
+                                    <option>Telangana</option>
+                                    <option>Karnataka</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Maharashtra</option>
+                                    <option>Kerala</option>
+                                    <option>Delhi</option>
+                                    <option>West Bengal</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="landmark">
+                                Landmark
+                                <span>(Optional)</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="landmark"
+                                name="landmark"
+                                placeholder="Nearby landmark"
+                            >
+
+                        </div>
+
+
+                        <div class="address-type">
+
+                            <p>Save address as</p>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="addressType"
+                                    value="Home"
+                                    checked
+                                >
+                                🏠 Home
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="addressType"
+                                    value="Work"
+                                >
+                                💼 Work
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="addressType"
+                                    value="Other"
+                                >
+                                📍 Other
+                            </label>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="checkout-btn address-submit"
+                        >
+                            Continue to Payment
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <!-- ORDER SUMMARY -->
+            <aside class="checkout-summary">
+
+                <div class="checkout-card">
+
+                    <h2>Order Summary</h2>
+
+                    <div id="addressCartItems">
+                        <!-- Items inserted by JavaScript -->
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-row">
+                        <span>Item Total</span>
+                        <strong id="addressItemTotal">₹0</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Delivery Fee</span>
+                        <strong>₹25</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Handling Fee</span>
+                        <strong>₹5</strong>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-row total-row">
+                        <strong>Total</strong>
+                        <strong id="addressGrandTotal">₹0</strong>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 Zepto Clone. For educational purposes only.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="../js/products.js" defer></script>
+    <script src="../js/cart.js" defer></script>
+    <script src="../js/search.js" defer></script>
+    <script src="../js/app.js" defer></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const addressForm = document.getElementById("addressForm");
+
+            addressForm.addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                const address = {
+                    fullName: document.getElementById("fullName").value,
+                    phone: document.getElementById("phone").value,
+                    pincode: document.getElementById("pincode").value,
+                    house: document.getElementById("house").value,
+                    street: document.getElementById("street").value,
+                    city: document.getElementById("city").value,
+                    state: document.getElementById("state").value,
+                    landmark: document.getElementById("landmark").value,
+                    addressType:
+                        document.querySelector(
+                            'input[name="addressType"]:checked'
+                        ).value
+                };
+
+                localStorage.setItem(
+                    "deliveryAddress",
+                    JSON.stringify(address)
+                );
+
+                window.location.href = "payment.html";
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>
