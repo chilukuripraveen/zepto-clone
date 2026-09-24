@@ -7,14 +7,14 @@ const PRODUCTS = [
   { id: 6, category: 'grocery', subcategory: 'Dairy', name: 'Amul Taaza Milk', weight: '1 L', price: 68, oldPrice: 72, discount: 6, image: 'assets/products/grocery/milk.svg', description: 'Fresh toned milk' },
   { id: 7, category: 'grocery', subcategory: 'Dairy', name: 'Amul Butter', weight: '100 g', price: 56, oldPrice: 60, discount: 7, image: 'assets/products/grocery/butter.svg', description: 'Creamy salted butter' },
   { id: 8, category: 'grocery', subcategory: 'Household', name: 'Surf Excel Matic', weight: '2 kg', price: 319, oldPrice: 385, discount: 17, image: 'assets/products/grocery/detergent.svg', description: 'Powerful fabric detergent' },
-  { id: 9, category: 'drinks', subcategory: 'Soft Drinks', name: 'Thums Up', weight: '750 ml', price: 38, oldPrice: 45, discount: 16, image: 'assets/products/drinks/cola.svg', description: 'Bold sparkling cola drink' },
-  { id: 10, category: 'drinks', subcategory: 'Fruit Juices', name: 'Maaza Mango Fruit Drink', weight: '150 ml', price: 24, oldPrice: 30, discount: 20, image: 'assets/products/drinks/juice.svg', description: 'Rich mango fruit drink' },
-  { id: 11, category: 'drinks', subcategory: 'Water', name: 'Bisleri Mineral Water', weight: '1 L', price: 39, oldPrice: 45, discount: 13, image: 'assets/products/drinks/water.svg', description: 'Packaged drinking water' },
-  { id: 12, category: 'drinks', subcategory: 'Energy Drinks', name: 'Monster Energy Drink', weight: '350 ml', price: 100, oldPrice: 125, discount: 20, image: 'assets/products/drinks/energy.svg', description: 'Energy drink for an active day' },
-  { id: 13, category: 'drinks', subcategory: 'Fruit Juices', name: 'Tropicana Orange Juice', weight: '1 L', price: 85, oldPrice: 105, discount: 19, image: 'assets/products/drinks/mango.svg', description: 'Refreshing orange fruit juice' },
-  { id: 14, category: 'drinks', subcategory: 'Herbal Drinks', name: 'Patanjali Aloe Vera Juice', weight: '1 L', price: 200, oldPrice: 235, discount: 15, image: 'assets/products/drinks/coffee.svg', description: 'Herbal wellness drink' },
-  { id: 15, category: 'drinks', subcategory: 'Soda & Mixes', name: 'Bisleri Soda', weight: '750 ml', price: 14, oldPrice: 20, discount: 30, image: 'assets/products/drinks/tea.svg', description: 'Sparkling soda mixer' },
-  { id: 16, category: 'drinks', subcategory: 'Soft Drinks', name: 'Coca-Cola Zero', weight: '300 ml', price: 38, oldPrice: 45, discount: 16, image: 'assets/products/drinks/sprite.svg', description: 'Zero sugar cola drink' },
+  { id: 9, category: 'drinks', subcategory: 'Soft Drinks', name: 'Thums Up', weight: '750 ml', price: 38, oldPrice: 45, discount: 16, image: 'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/314a.jpg', description: 'Bold sparkling cola drink' },
+  { id: 10, category: 'drinks', subcategory: 'Fruit Juices', name: 'Maaza Mango Fruit Drink', weight: '150 ml', price: 24, oldPrice: 30, discount: 20, image: 'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/427007a.jpg', description: 'Rich mango fruit drink' },
+  { id: 11, category: 'drinks', subcategory: 'Water', name: 'Bisleri Mineral Water', weight: '1 L', price: 39, oldPrice: 45, discount: 13, image: 'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/21699a.jpg', description: 'Packaged drinking water' },
+  { id: 12, category: 'drinks', subcategory: 'Energy Drinks', name: 'Monster Energy Drink', weight: '350 ml', price: 100, oldPrice: 125, discount: 20, image: 'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/403174a.jpg', description: 'Energy drink for an active day' },
+  { id: 13, category: 'drinks', subcategory: 'Fruit Juices', name: 'Tropicana Orange Juice', weight: '1 L', price: 85, oldPrice: 105, discount: 19, image: 'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/376a.jpg', description: 'Refreshing orange fruit juice' },
+  { id: 14, category: 'drinks', subcategory: 'Herbal Drinks', name: 'Patanjali Aloe Vera Juice', weight: '1 L', price: 200, oldPrice: 235, discount: 15, image: 'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/53703a.jpg', description: 'Herbal wellness drink' },
+  { id: 15, category: 'drinks', subcategory: 'Soda & Mixes', name: 'Bisleri Soda', weight: '750 ml', price: 14, oldPrice: 20, discount: 30, image: 'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/34354a.jpg', description: 'Sparkling soda mixer' },
+  { id: 16, category: 'drinks', subcategory: 'Soft Drinks', name: 'Coca-Cola Zero', weight: '300 ml', price: 38, oldPrice: 45, discount: 16, image: 'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/15286a.jpg', description: 'Zero sugar cola drink' },
   { id: 17, category: 'personal-care', subcategory: 'Bath & Body', name: 'Dove Cream Beauty Bar', weight: '100 g', price: 58, oldPrice: 65, discount: 11, image: 'assets/products/personal-care/soap.svg', description: 'Moisturising beauty bar' },
   { id: 18, category: 'personal-care', subcategory: 'Hair Care', name: 'Head & Shoulders Shampoo', weight: '180 ml', price: 189, oldPrice: 230, discount: 18, image: 'assets/products/personal-care/shampoo.svg', description: 'Anti-dandruff shampoo' },
   { id: 19, category: 'personal-care', subcategory: 'Oral Care', name: 'Colgate MaxFresh', weight: '150 g', price: 110, oldPrice: 135, discount: 19, image: 'assets/products/personal-care/toothpaste.svg', description: 'Fresh gel toothpaste' },
@@ -43,7 +43,7 @@ const CATEGORY_META = {
 function getProductById(id) { return PRODUCTS.find((product) => Number(product.id) === Number(id)); }
 function getProductsByCategory(category) { return PRODUCTS.filter((product) => product.category === category); }
 function formatPrice(value) { return `₹${Number(value).toLocaleString('en-IN')}`; }
-function productAsset(product) { return `assets/products/${product.category}/products.svg`; }
+function productAsset(product) { return product.category === 'drinks' && product.image.startsWith('http') ? `assets/products/drinks/source-${product.id}.jpg` : `assets/products/${product.category}/products.svg`; }
 function searchProducts(query) {
   const term = query.trim().toLowerCase();
   if (!term) return PRODUCTS.slice();
@@ -59,5 +59,7 @@ function sortProducts(products, sort) {
 }
 function productCard(product) {
   const assetPrefix = document.body.dataset.assetPrefix || '';
-  return `<article class="product-card" data-product-id="${product.id}"><div class="product-image"><img src="${assetPrefix}${productAsset(product)}" alt="${product.name}" loading="lazy"><span class="discount-tag">${product.discount}% OFF</span></div><div class="product-card-body"><h3>${product.name}</h3><p class="product-weight">${product.weight}</p><div class="product-price"><strong>${formatPrice(product.price)}</strong><del>${formatPrice(product.oldPrice)}</del></div><button class="add-to-cart" data-product-id="${product.id}" type="button">Add</button></div></article>`;
+  const asset = productAsset(product);
+  const imageSrc = asset.startsWith('http') ? asset : `${assetPrefix}${asset}`;
+  return `<article class="product-card" data-product-id="${product.id}"><div class="product-image"><img src="${imageSrc}" alt="${product.name}" loading="lazy"><span class="discount-tag">${product.discount}% OFF</span></div><div class="product-card-body"><h3>${product.name}</h3><p class="product-weight">${product.weight}</p><div class="product-price"><strong>${formatPrice(product.price)}</strong><del>${formatPrice(product.oldPrice)}</del></div><button class="add-to-cart" data-product-id="${product.id}" type="button">Add</button></div></article>`;
 }
